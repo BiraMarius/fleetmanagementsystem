@@ -6,8 +6,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class FleetmanagementsystemApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(FleetmanagementsystemApplication.class, args);
-	}
+    public static void main(String[] args) {
+        SpringApplication.run(FleetmanagementsystemApplication.class, args);
+    }
 
 }
