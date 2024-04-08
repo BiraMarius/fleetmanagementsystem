@@ -14,10 +14,16 @@ public class CountryController {
     @Autowired
     private CountryService countryService;
 
+//    @GetMapping("/countries")
+//    @ResponseBody
+//    public List<Country> getAll(){
+//        return countryService.getAll();
+//    }
+
     @GetMapping("/countries")
-    @ResponseBody
-    public List<Country> getAll(){
-        return countryService.getAll();
+    public String getAll(){
+        List<Country> countries = countryService.getAll();
+        return "parameters/countryList";
     }
 
 }
