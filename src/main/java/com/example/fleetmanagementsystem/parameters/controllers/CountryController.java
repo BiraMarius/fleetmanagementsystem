@@ -28,7 +28,9 @@ public class CountryController {
         return "parameters/countryList";
     }
 
-    //fix
-    //progress
+    @GetMapping("/countryAdd")
+    public String addCountry(){
+        return "parameters/countryAdd";
+    }
 
 }
