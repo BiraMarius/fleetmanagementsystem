@@ -56,6 +56,12 @@ public class ApplicationController {
         return "/payroll/index";
     }
 
+    @GetMapping("/reports")
+    public String reports(){return "/reports/index";}
+
+    @GetMapping("/security")
+    public String security(){return "/security/index";}
+
     //accounts
     //vehicles
     //payroll
