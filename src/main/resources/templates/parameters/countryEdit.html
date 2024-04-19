@@ -13,7 +13,7 @@
                             Editing Country record
                         </header>
                         <div class="panel-body">
-                            <form class="form-horizontal " th:action="@{/countries}" method="post">
+                            <form class="form-horizontal " th:action="@{'/countries/update/'+${country.id}}" method="put">
                                 <div class="form-group">
                                     <label class="control-label col-sm-4">Description</label>
                                     <div class="col-sm-6">
