@@ -10,46 +10,46 @@
                 <div class="col-lg-12">
                     <section class="panel">
                         <header class="panel-heading">
-                            Editing Country record
+                            Editing State record
                         </header>
                         <div class="panel-body">
-                            <form class="form-horizontal " th:action="@{'/countries/update/'+${country.id}}" method="put">
+                            <form class="form-horizontal " th:action="@{'/states/update/'+${state.id}}" method="put">
                                 <div class="form-group">
                                     <label class="control-label col-sm-4">Description</label>
                                     <div class="col-sm-6">
-                                        <input name="description" th:value="${country.description}" type="text" class="form-control">
+                                        <input name="description" th:value="${state.description}" type="text" class="form-control">
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <label class="control-label col-sm-4">Capital</label>
                                     <div class="col-sm-6">
-                                        <input name="capital" th:value="${country.capital}" class="form-control" size="16" type="text">
+                                        <input name="capital" th:value="${state.capital}" class="form-control" size="16" type="text">
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <label class="control-label col-sm-4"> Nationality</label>
                                     <div class="col-sm-6">
-                                        <input name="nationality" th:value="${country.nationality}" type="text" class=" form-control" />
+                                        <input name="nationality" th:value="${state.nationality}" type="text" class=" form-control" />
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <label class="control-label col-sm-4"> Continent</label>
 
                                     <div class="col-sm-5">
-                                        <input name="continent" th:value="${country.continent}" type="text" class="form-control">
+                                        <input name="continent" th:value="${state.continent}" type="text" class="form-control">
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <label class="control-label col-sm-4">Country Code</label>
+                                    <label class="control-label col-sm-4">State Code</label>
 
                                     <div class="col-sm-5">
-                                        <input name="code" th:value="${country.code}" type="text" class="form-control">
+                                        <input name="code" th:value="${state.code}" type="text" class="form-control">
                                     </div>
                                 </div>
                                 <!--buttons for save and exit-->
                                 <div style="margin-left:75%;margin-top: 25px;">
-                                    <button type="submit" href="/countryAdd" class="btn btn-success">Save Country</button>
-                                    <a href="/countries" class="btn btn-warning">Exit</a>
+                                    <button type="submit" href="/stateAdd" class="btn btn-success">Save State</button>
+                                    <a href="/states" class="btn btn-warning">Exit</a>
                                 </div>
                             </form>
 
